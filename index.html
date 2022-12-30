@@ -1,100 +1,277 @@
 <!DOCTYPE html>
 <html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <title> Arya Gawde | Portfolio </title>
+        <style>
+            html, body {
+                margin: 0;
+                padding: 0;
+                font-family: 'Open Sans';
+                scroll-behavior: smooth;
+            }
 
-<head>
-    <title> Arya Gawde | Personal Page </title>
-</head>
+            div {
+                margin: 0;
+            }
 
-<body style="font-family: Arial; margin-left: 25px; margin-right: 25px;">
+            .header {
+                background-color: black;
+                color: white;
+                display: flex;
+                margin: 0;
+                padding: 0;
+                width: 100%;
+                position: fixed;
+            }
+            
+            ul.navbar {
+                list-style-type: none;
+                color: white;
+            }
 
-    <h1 style="text-align: center; color: darkblue;"> Arya Gawde </h1>
-    <hr>
+            ul.navbar > li {
+                float: left;
+            }
 
-    <img src="img/Photo.jpg" style="width: 50%; height: 50%; " alt="My photo">
+            ul.navbar > li > a {
+                text-decoration: none;
+                color: white;
+                margin: 5px;
+            }
 
-    <br>
-    <p> Hello! I am Arya Gawde, a first year undergraduate student at <b>Indian Institute of Technology (IIT) Goa</b>, pursuing a BTech degree in <b>Computer Science and Engineering</b>. I am from <i>Mumbai, Maharashtra. </i><br> My hobbies include listening to various kinds of music, singing and reading books. I also enjoy playing sudoku. </p>
+            div.home {
+                display: flex;
+                background: url(background3.jpg);
+                flex-direction: column;
+                color: white;
+                text-align: center;
+                justify-content: center;
+                flex-flow: column nowrap;
+                align-items: center;
+            }
 
-    <hr>
+            div.education {
+                display: flex;
+                background-color: #292a5e;
+                flex-direction: column;
+                color: white;
+                text-align: center;
+                justify-content: center;
+                flex-flow: column nowrap;
+                align-items: center;
+            }
 
-    <h2 style="color: darkblue;"> Education </h2>
 
-    <table style="width: 100%; padding: 25px;" border="1">
-        <tr>
-            <th> Year of Graduation </th>
-            <th> Degree </th>
-            <th> Institution </th>
-        </tr>
-        <tr>
-            <td style="text-align: center;"> 2024 </td>
-            <td style="text-align: center;"> B. Tech. </td>
-            <td> Indian Institute of Technology Goa </td>
-        </tr>
-        <tr>
-            <td style="text-align: center;"> 2021 </td>
-            <td style="text-align: center;"> 12th Standard (Higher Secondary Certificate (HSC)) - State Board:
-                Maharashtra </td>
-            <td> Ratanbai Walbai Junior College of Science, Mulund, Mumbai, Maharashtra </td>
-        </tr>
-        <tr>
-            <td style="text-align: center;"> 2019 </td>
-            <td style="text-align: center;"> 10th Standard (CBSE) </td>
-            <td> New Horizon Scholars School, Airoli, Navi Mumbai, Maharashtra. </td>
-        </tr>
-    </table>
+            .about {
+                display: flex;
+                background-color: #796b93;
+                color: white;
+                justify-content: center;
+                flex-flow: column nowrap;
+                align-items: center;
+            }
 
-    <br>
-    <hr>
+            div.about > div {
+                text-align: center;
+            }
+            .contact {
+                display: flex;
+                background-color: #292a5e;
+                color: white;
+                text-align: center;
+                justify-content: center;
+                flex-flow: column nowrap;
+                align-items: center;
+            }
 
-    <h2 style="color: darkblue;"> 1st-year Courses @ IIT Goa</h2>
+            div.skills {
+                display: flex;
+                background-color: #e5e5e5;
+                color: black;
+                text-align: center;
+                justify-content: center;
+                flex-flow: column nowrap;
+                align-items: center;
+            }
 
-    <h3 > Autumn Semester </h3>
+            div.projects {
+                display: flex;
+                background-color: #796b93;
+                color: white;
+                text-align: center;
+                justify-content: center;
+                flex-flow: column nowrap;
+                align-items: center;
+            }
 
-    <ul type="disc">
-        <li> <b> MTH101: </b> Calculus by <i> Dr. Sandipan De and Dr. Abhitosh Upadhyay</i> </li>
-        <li> <b> PH101: </b> Quantum Physics and Application by <i> Dr. Santosh Kumar Das and Dr. Sudipta Kanungo</i>
-        </li>
-        <li> <b> CS101: </b> Introduction to Computing by <i> Dr. Clint P. George</i> </li>
-        <li> <b> CH101: </b> Physical Chemistry by <i> Dr. Mantu Santra and Dr. E Siva Subramaniam Iyer</i> </li>
-        <li> <b> CH102: </b> Inorganic and Organic Chemistry by <i> Dr. Raja Mitra and Santosh Kumar Das and Dr.
-                Rishikesh Narayan</i> </li>
-        <li> <b> CH104: </b> Chemistry Lab II by <i> Dr. E Siva Subramaniam Iyer</i> </li>
-        <li> <b> HS101: </b> Foundation Programme in Humanities and Social Sciences by <i> Dr. Sabiha Hashami</i> </li>
-        <li> <b> CS100: </b> Introduction to Profession by <i> Dr. Neha Karanjkar</i> </li>
-        <li> <b> NO101: </b> National Sports Organization by <i> Santosh Upadhyay</i> </li>
+            div.experience {
+                display: flex;
+                background-color: #e5e5e5;
+                color: black;
+                text-align: center;
+                justify-content: center;
+                flex-flow: column nowrap;
+                align-items: center;
+            }
 
-    </ul>
+            div.education > div.two-column {
+                display: flex;
+                flex-direction: row wrap;
+                justify-content: center;
+                align-items: center stretch;
+                width: 60%;
+            }
 
-    <h3> Spring Semester </h3>
+            div.education > div.two-column > .column {
+                width: 50%;
+                margin: 10px;
+                padding: 10px;
+                border: 1px solid white;
+            }
+            
+            div.contact > a:hover > i {
+                background-color: blanchedalmond;
+            }
 
-    <ol type="1">
-        <li> <em> MTH1021: </em> Basic Linear Algebra by <u> Dr. Kalpesh Haria</u> </li>
-        <li> <em> PH102: </em> Electricity and Magnetism by <u> Dr. Vaibhav Wasnik and Dr. Santosh Kumar </u> </li>
-        <li> <em> PH104: </em> Physics Lab by <u> Dr. Sudipta Kanungo</u> </li>
-        <li> <em> EE101: </em> Introduction to Electrical and Electronics Engineering by <u> Dr. Sheron Figardo and Dr.
-                Nandakumar Nambath</u> </li>
-        <li> <em> BIO101: </em> Introductory Biology by <u> Dr. Sreenath Balakrishnan and Dr. Rishikesh Narayan</u>
-        </li>
-        <li> <em> ME102: </em> Engineering Graphics and Introduction to Computer Aided-Drawing by <u> Dr. Anirudha
-                Ambekar</u> </li>
-        <li> <em> NO102: </em> National Sports Organization by <u> Santosh Upadhyay</u> </li>
-        <li> <a href="https://clintpgeorge.github.io/cs-102-spring-2022/"><em> CS102: </em> Software Tools by <u> Dr. Clint P. George</u> </a> </li>
-    </ol>
+            div.home > div.two-column {
+                display: flex;
+                flex-direction: row wrap;
+                justify-content: center;
+                align-items: center;
+                width: 60%;
+            }
 
-    <!-- None of the other spring semester courses has a webpage apart from CS102, so the link for CS102 is updated.-->
+            div.home > div.two-column > .column {
+                width: 50%;
+                margin: 10px;
+                padding: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="header">
+            <!-- Left floating navbar with title -->
+            <div> <h3> Arya Gawde</h3> </div>
+            <div>
+            <ul class="navbar">
+                <li> <a href="#home"> Home </a></li>
+                <li> <a href="#about"> About </a></li>
+                <li> <a href="#education"> Education </a></li>
+                <li> <a href="#skills"> Skills </a></li>
+                <li> <a href="#projects"> Projects </a></li>
+                <li> <a href="#experience"> Experience </a></li>
+                <li> <a href="#contact"> Contact </a></li>
+            </ul>
+            </div>
+        </div>
+        <div id="home" class="home">
+            <br>
+            <br>
+            <br>
+            <div class="two-column">
+                <div class="column"> 
+                    <img src="photo3.jpg" style="width: 100%; height: 100%; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); border-radius: 25px;">
+                </div>
+                <div class="column" style="text-align: left;"> 
+                    <h1> Arya Gawde</h1>
+                    <h3> I'm a Computer Science and Engineering Sophomore at Indian Institute of Technology (IIT), Goa. </h3>
+                    
+                </div>
 
-    <hr>
+            </div>
+        </div>
+        <div id="about" class="about" style="padding: 5px;">
+            <div class="title" style="padding: 0px 10%; border-bottom: 1px solid white; margin: 15px;"> 
+                <h2> <i class='fa fa-user-circle-o' style='font-size: 36px;color: white'></i>   About Me! </h2>
+            </div>
+            <div style="width: 60%; text-align: left;">
+                <p>
+                Hi there! I am Arya Gawde, a sophomore currently pursuing a Bachelors of Technology degree in Computer Science and Engineering from Indian Institute of Technology (IIT), Goa. I am also a student fellow of the Women Engineers Program (Cohort 4), offered by TalentSprint and sponsored by Google. I am from Mumbai, India and have also lived in Dubai, UAE for eight years. I enjoy programming and am passionate about learning as much as I can. <br> <br>
+                I begun my foray into the world of computer science six years ago in the field of front-end web development and since then, there has been no looking back. Apart from web development, machine learning and competitive programming are my fields of interest. You will probably find me listening to music, singing something random or reading a novel in my spare time.
+                <br>
+                <br>
+                </p>
+            </div>
+            
+           
+        </div>
 
-    <h2 style="color: darkblue;"> Hobbies</h2>
-    <p> My hobbies include: singing and listening to the various genres of music like: </p>
-    <ul type="disc" style="background-color: powderblue; padding-top: 10px; padding-bottom: 10px; ">
-        <li> English Pop and Hindi film music </li>
-        <li><a href="https://en.wikipedia.org/wiki/Jazz"> Jazz </a></li>
-        <li><a href="https://en.wikipedia.org/wiki/Rhythm_and_blues"> Rhythm and blues (R&B) </a> </li>
-        <li> Rock </li>
-    </ul>
+        <div class="education" id="education" style="padding: 5px;">
+            <div class="title" style="padding: 0px 10%; border-bottom: 1px solid white; margin: 15px;"> 
+                <h2> Education </h2>
+            </div>
+            <div class="two-column">
+                <div class="column"> 
+                    <h4> Indian Institute of Technology, Goa </h4> 
+                    <p> Year: 2021-2025 (Expected) </p>
+                    <p> Current CPI: 8.00 / 10.00 (Upto Second Semester) </p>
+                </div>
+                <div class="column"> 
+                    
+                    <h4> Ratanbai Walbai Junior College of Science, Mumbai  </h4> 
+                    <p> Year: 2019-2021 </p>
+                    <p> Grade: 96.17% </p>
+                </div>
 
-    <p> Apart from this, I also enjoying reading novels and playing sudoku. </p>
-</body>
+            </div>
+            <div class="two-column">
+                <div class="column"> 
+                    <h4> New Horizon Scholars School, Navi Mumbai   </h4> 
+                    <p> Year: 2011-2019 <br>
+                    Grade: 98% </p>
+                    <p> Activities: Science and Broadcasting Prefect (2017-18) </p>
+                </div>
+                <div class="column"> 
+                    <h4> Our Own English High School, Dubai   </h4> 
+                    <p> Year: 2009-2011 </p>
+                </div>
 
+            </div>
+            
+        </div>
+
+        <div class="skills" id="skills">
+            <div class="title" style="padding: 0px 10%; border-bottom: 1px solid black; margin: 15px;"> 
+                <h2> Skills </h2>
+                <h3> Section being updated</h3>
+            </div>
+        </div>
+
+        <div id="projects" class="projects">
+            <div class="title" style="padding: 0px 10%; border-bottom: 1px solid white; margin: 15px;"> 
+                <h2> Projects </h2>
+                <h3> Section being updated</h3>
+            </div>
+        
+            
+           
+        </div>
+
+        <div id="experience" class="experience">
+            <div class="title" style="padding: 0px 10%; border-bottom: 1px solid black; margin: 15px;"> 
+                <h2> Experience </h2>
+                <h3> Section being updated</h3>
+            </div>
+        </div>
+        <div id="contact" class="contact">
+            <div class="title" style="padding: 0px 10%; border-bottom: 1px solid white; margin: 15px;"> 
+                <h2> Contact </h2>
+            </div>
+            <div>
+                <a href="https://www.linkedin.com/in/arya-gawde-57b461236/"> <i class="fa fa-linkedin-square" style="font-size: 48px; color:white; padding: 15px;"></i> </a>
+                <a href="https://github.com/aryagawde"> <i class="fa fa-github" style="font-size: 48px; color:white; padding: 15px;"></i> </a>
+                <a href="mailto:aryamgawde@gmail.com"> <i class="fa fa-envelope" style="font-size: 48px; color:white; padding: 15px;"></i> </a>
+                <i title="Mumbai, India | Ponda, Goa" class="fa fa-map-marker" style="font-size:48px; color: white; padding: 15px;"></i>
+            </div>
+            <div>
+                <p> Last Updated on January 1, 2023 | &#169; 2023, All Rights Reserved. </p>
+            </div>
+        </div>
+
+
+    </body>
 </html>
