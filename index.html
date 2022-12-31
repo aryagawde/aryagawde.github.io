@@ -26,6 +26,10 @@
                 padding: 0;
                 width: 100%;
                 position: fixed;
+                text-align: center;
+                justify-content: center;
+                flex-flow: row nowrap;
+                align-items: center;
             }
             
             ul.navbar {
@@ -35,12 +39,30 @@
 
             ul.navbar > li {
                 float: left;
+                padding: 15px;
             }
 
             ul.navbar > li > a {
                 text-decoration: none;
                 color: white;
-                margin: 5px;
+                padding: 15px;
+                font-weight: bold;
+                transition: 0.5s;
+            }
+
+            ul.navbar > li > a:hover {
+                text-decoration: none;
+                color: white;
+                background-color: #292a5e;
+                border-radius: 15px;
+
+            }
+
+            .header > .two-column-navbar {
+                width: 60%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
             }
 
             div.home {
@@ -54,15 +76,18 @@
                 align-items: center;
             }
 
-            div.education {
+            div.home > div.two-column {
                 display: flex;
-                background-color: #292a5e;
-                flex-direction: column;
-                color: white;
-                text-align: center;
+                flex-direction: row wrap;
                 justify-content: center;
-                flex-flow: column nowrap;
                 align-items: center;
+                width: 60%;
+            }
+
+            div.home > div.two-column > .column {
+                width: 50%;
+                margin: 10px;
+                padding: 10px;
             }
 
 
@@ -78,15 +103,36 @@
             div.about > div {
                 text-align: center;
             }
-            .contact {
+            
+
+            div.education {
                 display: flex;
                 background-color: #292a5e;
+                flex-direction: column;
                 color: white;
                 text-align: center;
                 justify-content: center;
                 flex-flow: column nowrap;
                 align-items: center;
             }
+
+            div.education > div.two-column {
+                display: flex;
+                flex-direction: row wrap;
+                justify-content: center;
+                align-items: center stretch;
+                width: 60%;
+            }
+
+            div.education > div.two-column > .column {
+                width: 50%;
+                margin: 10px;
+                padding: 10px;
+                border: 1px solid white;
+
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
+            }
+            
 
             div.skills {
                 display: flex;
@@ -118,7 +164,7 @@
                 align-items: center;
             }
 
-            div.education > div.two-column {
+            div.experience > div.two-column {
                 display: flex;
                 flex-direction: row wrap;
                 justify-content: center;
@@ -126,46 +172,45 @@
                 width: 60%;
             }
 
-            div.education > div.two-column > .column {
+            div.experience > div.two-column > .column {
                 width: 50%;
                 margin: 10px;
                 padding: 10px;
-                border: 1px solid white;
-            }
-            
-            div.contact > a:hover > i {
-                background-color: blanchedalmond;
+
+                background-color: white;
+                border-radius: 15px;
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
             }
 
-            div.home > div.two-column {
+            /* Start of contact */
+            .contact {
                 display: flex;
-                flex-direction: row wrap;
+                background-color: #292a5e;
+                color: white;
+                text-align: center;
                 justify-content: center;
+                flex-flow: column nowrap;
                 align-items: center;
-                width: 60%;
             }
 
-            div.home > div.two-column > .column {
-                width: 50%;
-                margin: 10px;
-                padding: 10px;
-            }
+            /* End of contact */
         </style>
     </head>
     <body>
         <div class="header">
             <!-- Left floating navbar with title -->
-            <div> <h3> Arya Gawde</h3> </div>
-            <div>
-            <ul class="navbar">
-                <li> <a href="#home"> Home </a></li>
-                <li> <a href="#about"> About </a></li>
-                <li> <a href="#education"> Education </a></li>
-                <li> <a href="#skills"> Skills </a></li>
-                <li> <a href="#projects"> Projects </a></li>
-                <li> <a href="#experience"> Experience </a></li>
-                <li> <a href="#contact"> Contact </a></li>
-            </ul>
+            <div class="two-column-navbar"> 
+                <div>
+                <ul class="navbar">
+                    <li> <a href="#home"> Home </a></li>
+                    <li> <a href="#about"> About </a></li>
+                    <li> <a href="#education"> Education </a></li>
+                    <li> <a href="#skills"> Skills </a></li>
+                    <li> <a href="#projects"> Projects </a></li>
+                    <li> <a href="#experience"> Experience </a></li>
+                    <li> <a href="#contact"> Contact </a></li>
+                </ul>
+            </div>
             </div>
         </div>
         <div id="home" class="home">
@@ -207,14 +252,12 @@
             <div class="two-column">
                 <div class="column"> 
                     <h4> Indian Institute of Technology, Goa </h4> 
-                    <p> Year: 2021-2025 (Expected) </p>
-                    <p> Current CPI: 8.00 / 10.00 (Upto Second Semester) </p>
+                    <p> Year: 2021-2025 (Expected) <br> Current CPI: 8.00 / 10.00 (Upto Second Semester) </p>
                 </div>
                 <div class="column"> 
                     
                     <h4> Ratanbai Walbai Junior College of Science, Mumbai  </h4> 
-                    <p> Year: 2019-2021 </p>
-                    <p> Grade: 96.17% </p>
+                    <p> Year: 2019-2021 <br> Grade: 96.17% </p>
                 </div>
 
             </div>
@@ -222,14 +265,13 @@
                 <div class="column"> 
                     <h4> New Horizon Scholars School, Navi Mumbai   </h4> 
                     <p> Year: 2011-2019 <br>
-                    Grade: 98% </p>
-                    <p> Activities: Science and Broadcasting Prefect (2017-18) </p>
+                    Grade: 98% <br> Activities: Science and Broadcasting Prefect (2017-18) </p>
                 </div>
                 <div class="column"> 
                     <h4> Our Own English High School, Dubai   </h4> 
                     <p> Year: 2009-2011 </p>
                 </div>
-
+                <br>
             </div>
             
         </div>
@@ -254,15 +296,40 @@
         <div id="experience" class="experience">
             <div class="title" style="padding: 0px 10%; border-bottom: 1px solid black; margin: 15px;"> 
                 <h2> Experience </h2>
-                <h3> Section being updated</h3>
             </div>
+            <div class="two-column">
+                <div class="column"> 
+                    <h4> Core Member, ArchiTechs (Web and App Development Club, IIT Goa) </h4> 
+                    <p> Year: August 2022 - Present <br> Role: Front-end Web Developer </p>
+                </div>
+                <div class="column"> 
+                    <h4> Member, Editorial Team, Gurukul Varta (Official Newsletter, IIT Goa)   </h4> 
+                    <p> Year: December 2022 - Present </p>
+                </div>
+                
+
+            </div>
+            <div class="two-column">
+                <div class="column"> 
+                    
+                    <h4> Core Member, Orion (Music Club, IIT Goa)  </h4> 
+                    <p> Year: July 2022 - Present <br> Role: Vocalist </p>
+                </div>
+                <div class="column"> 
+                    <h4> Student Scholar, Google TalentSprint Women Engineers Program </h4> 
+                    <p> Year: April 2022 - Present </p>
+                </div>
+
+            </div>
+            <br>
+            
         </div>
         <div id="contact" class="contact">
             <div class="title" style="padding: 0px 10%; border-bottom: 1px solid white; margin: 15px;"> 
                 <h2> Contact </h2>
             </div>
             <div>
-                <a href="https://www.linkedin.com/in/arya-gawde-57b461236/"> <i class="fa fa-linkedin-square" style="font-size: 48px; color:white; padding: 15px;"></i> </a>
+                <a href="https://www.linkedin.com/in/arya-gawde-57b461236/"> <i class="fa fa-linkedin" style="font-size: 48px; color:white; padding: 15px;"></i> </a>
                 <a href="https://github.com/aryagawde"> <i class="fa fa-github" style="font-size: 48px; color:white; padding: 15px;"></i> </a>
                 <a href="mailto:aryamgawde@gmail.com"> <i class="fa fa-envelope" style="font-size: 48px; color:white; padding: 15px;"></i> </a>
                 <i title="Mumbai, India | Ponda, Goa" class="fa fa-map-marker" style="font-size:48px; color: white; padding: 15px;"></i>
